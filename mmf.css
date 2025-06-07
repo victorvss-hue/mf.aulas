@@ -1,0 +1,51 @@
+       body{
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+        }
+        fieldset {
+            border: 2px solid #0077cc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+        }
+        legend {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0c0d0e;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.2em;
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
