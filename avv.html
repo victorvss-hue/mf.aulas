@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Conversor de Temperatura</title>
-  <link rel="stylesheet" href="mmf.css">
+    <link rel="stylesheet" href="mmf.css">
 </head>
 <body>
-        <script src="avv.js"></script>
+    <script src="avv.js"></script>
 
     <h1>Conversor de Temperatura</h1>
 
     <fieldset>
         <legend>Celsius para Fahrenheit</legend>
-        <label for="celcius">Temperatura em Celsius:</label>
-        <input type="number" id="celcius" placeholder="Ex: 25" />
+        <label for="celsius">Temperatura em Celsius:</label>
+        <input type="number" id="celsius" placeholder="Ex: 25" />
         <button onclick="converterCF()">Converter para °F</button>
     </fieldset>
 
@@ -23,13 +23,20 @@
         <input type="number" id="fahrenheit" placeholder="Ex: 77" />
         <button onclick="converterFC()">Converter para °C</button>
     </fieldset>
-<label for="celsius">Celsius:</label>
-<input type="number" id="celsius" placeholder="Digite °C">
-<br>
-<button onclick="converterCK()">Converter para Kelvin</button>
-<p id="resultado"></p>
 
-    <div id="resultado"></div>
-   
+    <fieldset>
+        <legend>Kelvin em Celsius</legend>
+        <label for ="kelvin">Temperatura em Celsius</label>
+        <input type="number" id="kelvin" placeholder="Ex: 87"/>
+        <button onclick="converterCK()">Converter para °C</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Celsius em Kelvin</legend>
+        <label for = "celsiusCK">Temperatura em Kelvin</label>
+        <input type = "number" id="celsiusCK" placeholder="Ex: 3000"/>
+        <button onclick="converterKC()">Converter para °F</button>
+    </fieldset>
+    <p id="resultado"></p>
 </body>
 </html>

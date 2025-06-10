@@ -1,7 +1,7 @@
 function converterCF() {
-    var celsius = document.getElementById("celsius").value;
+    var celsius = parseFloat(document.getElementById("celsius").value);
 
-    if (celsius === "") {
+    if (isNaN(celsius)) {
         document.getElementById("resultado").innerText = "Por favor, insira uma temperatura em Celsius.";
         return;
     }
@@ -12,9 +12,9 @@ function converterCF() {
 }
 
 function converterFC() {
-    var fahrenheit = document.getElementById("fahrenheit").value;
+    var fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
 
-    if (fahrenheit === "") {
+    if (isNaN(fahrenheit)) {
         document.getElementById("resultado").innerText = "Por favor, insira uma temperatura em Fahrenheit.";
         return;
     }
@@ -25,15 +25,27 @@ function converterFC() {
 }
 
 function converterCK() {
-    var celsius = document.getElementById("celsius").value;
+    var kelvin = parseFloat(document.getElementById("kelvin").value);
 
-    if (celsius === "") {
+    if (isNaN(kelvin)) {
+        document.getElementById("resultado").innerText = "Por favor, insira uma temperatura em Kelvin.";
+        return;
+    }
+
+    var celsius = kelvin - 273;
+    var formula = `${kelvin} - 273.15 = ${celsius.toFixed(2)} °C`;
+    document.getElementById("resultado").innerText = `Cálculo: ${formula}`;
+}
+
+function converterKC() {
+    var celsius = parseFloat(document.getElementById("celsiusCK").value);
+
+    if (isNaN(celsius)) {
         document.getElementById("resultado").innerText = "Por favor, insira uma temperatura em Celsius.";
         return;
     }
 
-    var kelvin = parseFloat(celsius) + 273;
+    var kelvin = celsius + 273;
     var formula = `${celsius} + 273 = ${kelvin.toFixed(2)} K`;
     document.getElementById("resultado").innerText = `Cálculo: ${formula}`;
 }
-
